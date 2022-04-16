@@ -1,6 +1,4 @@
-// ./src/components/TitleSegment.js
 
-// ...
 
 // Title segment container
 export default function TitleSegment({
@@ -8,7 +6,7 @@ export default function TitleSegment({
     svgNameList,
     changeCurrentSVG,
 }) {
-    // Contains the structure for the top section of the project
+    
 
     // Returns a JSX component for the title segment
     return (

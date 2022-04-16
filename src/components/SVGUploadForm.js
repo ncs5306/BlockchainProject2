@@ -1,4 +1,3 @@
-// ./src/components/SVGUploadForm.js
 
 // Imports
 import React from "react";
@@ -7,13 +6,13 @@ const isSVG = require("is-svg");
 
 // SVG upload form container
 export default function SVGUploadForm({ updateSVG }) {
-    // Contains code for SVG upload form
+    
 
     const [form] = Form.useForm(); // Input form for SVG upload
 
     // Handle upload form
     const onSubmit = (formData) => {
-        // Construct the new SVG from the form data
+       
         let newSVG = {
             title: formData.title,
             svg: formData.svg,
@@ -22,7 +21,7 @@ export default function SVGUploadForm({ updateSVG }) {
         // Check if the SVG is actually real
         if (isSVG(newSVG.svg)) {
             updateSVG(newSVG);
-            // Alert the user that the SVG has been submitted
+            
             alert(`SVG ${newSVG.title} has been submitted to GUN.`);
         } else {
             // Alert the user that the SVG is of invalid format

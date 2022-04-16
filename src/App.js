@@ -1,4 +1,4 @@
-// ./src/App.js
+
 
 import React, { useState } from "react";
 import { Divider } from "antd";
@@ -10,7 +10,7 @@ import SVGUploadForm from "./components/SVGUploadForm";
 
 export default function App() {
     // Contains all individual components as well as GUN instance and control
-     // Contains all individual components as well as GUN instance and control
+    
      const gun = GUN();
 
    
@@ -18,7 +18,7 @@ export default function App() {
      const [svg, setSVG] = useState({
         // Default state
         title: "Ethereum Logo",
-        // Default SVG: Ethereum Logo
+        
         svg: `
             <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 784.37 1277.39" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
                 <g id="Layer_x0020_1">
@@ -39,13 +39,13 @@ export default function App() {
 
      // List of SVGs displayed
      const [svgNameList, setSVGNameList] = useState([
-        // Default list of SVGs
+        
         "Ethereum Logo",
     ]);
 
     // Callback function to update the SVG from the selector
     const changeCurrentSVG = (selectionTitle) => {
-         // Ensure that the previously selected SVG is pushed to GUN
+         
          gun.get(svg.title).put({
             title: svg.title,
             svg: svg.svg,
@@ -62,7 +62,7 @@ export default function App() {
 
      // Callback function to update the SVG within a child component
      const updateSVG = (newSVG) => {
-       // Update the GUN database with the new SVG
+       
        gun.get(newSVG.title).put({
         title: newSVG.title,
         svg: newSVG.svg,
@@ -77,7 +77,7 @@ export default function App() {
     return (
         <div
             style={{
-                textAlign: "center", // How in the hell does this work
+                textAlign: "center", 
             }}
         >
             <TitleSegment

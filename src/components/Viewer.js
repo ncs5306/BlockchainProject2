@@ -1,4 +1,4 @@
-// ./src/components/Viewer.js
+
 
 // Viewer segment container
 export default function Viewer({ svgData }) {
